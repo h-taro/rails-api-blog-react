@@ -1,5 +1,6 @@
 import * as React from 'react'
 import api from './api'
+import styles from './app.module.scss'
 
 interface Post {
     id: number
@@ -30,7 +31,7 @@ export default function App() {
             {
                 posts.map((post) => {
                     return (
-                        <div key={post.id}>
+                        <div key={post.id} className={styles['my-component']} >
                             <h1>{post.title}</h1>
                         </div>
                     )
