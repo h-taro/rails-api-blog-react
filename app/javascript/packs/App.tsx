@@ -31,7 +31,7 @@ export default function App() {
             {
                 posts.map((post) => {
                     return (
-                        <div key={post.id} className={styles['my-component']} >
+                        <div key={post.id} className={styles.myComponent} >
                             <h1>{post.title}</h1>
                         </div>
                     )
